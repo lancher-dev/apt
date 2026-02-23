@@ -1,0 +1,13 @@
+Package: lancher
+Version: 0.2.8
+Architecture: amd64
+Maintainer: Kasui92 <info@lucapattocchio.dev>
+Installed-Size: 6672
+Filename: pool/main/lancher_0.2.8_amd64.deb
+Size: 2427508
+MD5sum: 5d407a470425aa2b52b12a41e546bbee
+SHA1: be6bd9a869731d51e00a68911668d2b0129f0e31
+SHA256: 2f4f086d4684949a1665181b829f2e145a7c58df09e17d597a6ff0c69ab7a4d1
+Homepage: https://lancher.dev
+Description: A minimal, local project-template manager written in Go.
+
