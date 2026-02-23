@@ -4,10 +4,10 @@ Architecture: arm64
 Maintainer: Kasui92 <info@lucapattocchio.dev>
 Installed-Size: 2700
 Filename: pool/main/lancher_0.3.0_arm64.deb
-Size: 954606
-MD5sum: e32d44fe926dc90fa73ae8b4a361c7c5
-SHA1: 811edc514a56230084efec104965e7f78b926426
-SHA256: d49fe5ff9adc1eff777b5b13cebf02a31c1ce9e639c60843256e3d68ba0c59c5
+Size: 954624
+MD5sum: a602bdbfe3694f9aad9d9d289d4a3334
+SHA1: 93acb8e8bde4f30872b85a77c7a7f9f82464ad15
+SHA256: 686b88774d94187a193bb32433fa30aaf0f7d4a1226b9a6a665e21fe9e03aa6e
 Homepage: https://lancher.dev
 Description: A minimal, local project-template manager written in Go.
 
