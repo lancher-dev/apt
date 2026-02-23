@@ -1,0 +1,6 @@
+# All generated APT index files (Packages, Release, InRelease, Release.gpg)
+# are committed intentionally — they serve as static GitHub Pages content.
+
+# Local temp files
+*.tmp
+*.bak
