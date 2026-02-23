@@ -1,0 +1,31 @@
+name: Validate APT Repository
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check public key
+        run: |
+          KEY=$(ls pubkeys/pubkey_*.asc 2>/dev/null | head -1)
+          if [ -z "${KEY}" ]; then
+            echo "ERROR: no pubkey_*.asc found in pubkeys/" >&2
+            exit 1
+          fi
+          gpg --quiet --import "${KEY}"
+          echo "OK — $(basename ${KEY})"
+
+      - name: Check pool directory
+        run: |
+          [ -d pool/main ] || { echo "ERROR: pool/main/ missing" >&2; exit 1; }
+          echo "OK — pool/main/"
